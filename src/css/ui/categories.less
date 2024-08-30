@@ -1,0 +1,145 @@
+.words-categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin-top: 0.1rem;
+}
+
+.word-categorie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 8px;
+}
+
+.word-categorie {
+    border: 1px solid rgb(24, 23, 23);
+}
+
+.word-categorie:nth-child(1) {
+    background-color: #8e44ad; /* Roxo vibrante */
+}
+
+.word-categorie:nth-child(2) {
+    background-color: #e74c3c; /* Vermelho coral */
+}
+
+.word-categorie:nth-child(3) {
+    background-color: #3498db; /* Azul brilhante */
+}
+
+.word-categorie:nth-child(4) {
+    background-color: #f39c12; /* Amarelo dourado */
+}
+
+.word-categorie:nth-child(5) {
+    background-color: #2ecc71; /* Verde esmeralda */
+}
+
+#routerbackitem{
+    margin: 1rem;
+    color: white;
+}
+
+
+.search-container {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+}
+
+.search-input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.search-input-wrapper input {
+    width: 100%;
+    padding: 0.7rem 2.5rem 0.7rem 0.7rem;
+    /* Adjusted padding for icon */
+    border: 1px solid rgb(24, 23, 23);
+    border-radius: 0.3rem;
+}
+
+.search-input-wrapper i {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: rgb(24, 23, 23);
+}
+
+
+/* @Results words */
+.words-highlited {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
+    overflow-y: scroll;
+}
+
+.words-highlited::-webkit-scrollbar {
+    display: none;
+}
+
+.words-highlited-title {
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.words-highlited-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.words-highlited-thumb {
+    display: block;
+    height: auto;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.words-highlited-thumb img {
+    width: 100%;
+    height: 100%;
+}
+
+.words-highlited-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.words-highlited-details h1 {
+    font-size: 13px;
+    font-weight: bold;
+    vertical-align: baseline;
+}
+
+.words-highlited-details span {
+    font-size: 12px;
+    font-weight: 400;
+    color: #adadb8;
+    vertical-align: baseline;
+}
+
+.list-categorie {
+    padding: 1rem;
+}
+
+.list-categorie ul {
+    background-color: transparent !important;
+}

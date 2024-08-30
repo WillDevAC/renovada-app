@@ -1,0 +1,76 @@
+<template>
+  <div class="page" data-name="profile_page">
+    <div class="page-content" id="page-content">
+      <div class="profile-container-user">
+        <div class="profile-container-avatar" id="avatar-profile">
+          <i class="f7-icons">person</i>
+        </div>
+        <div class="profile-container-user-details">
+          <h1 id="name_user">Nome</h1>
+          <span id="email_user">email@gmail.com</span>
+          <button class="button button-fill button-raised col">
+            EDITAR MEU PERFIL
+          </button>
+        </div>
+      </div>
+      <div class="profile-container-cellule" id="groups-list">
+        <div class="profile-container-cellule-wrapper">
+          <div class="celule-info">
+            <h1>Participe de uma célula</h1>
+            <span>Você não participa de nenhuma</span>
+          </div>
+          <i class="f7-icons">person_3_fill</i>
+        </div>
+      </div>
+      <div class="profile-container-links">
+        <a href="#" class="profile-container-link">
+          <div class="profile-container-linksicon">
+            <i class="f7-icons">heart_fill</i>
+            <h1>Pedidos de oração</h1>
+          </div>
+          <i class="f7-icons" id="ticketicon">chevron_right</i>
+        </a>
+        <a href="#" class="profile-container-link">
+          <div class="profile-container-linksicon">
+            <i class="f7-icons">ticket</i>
+            <h1>Minhas compras</h1>
+          </div>
+          <i class="f7-icons" id="ticketicon">chevron_right</i>
+        </a>
+        <a class="profile-container-link">
+          <div class="profile-container-linksicon">
+            <i class="f7-icons">square_arrow_left</i>
+            <h1>Desconectar</h1>
+          </div>
+          <i class="f7-icons" id="ticketicon">chevron_right</i>
+        </a>
+      </div>
+    </div>
+    <div class="toolbar toolbar-bottom tabbar">
+      <div class="toolbar-inner">
+        <a href="/home" class="tab-link">
+          <i class="f7-icons">house</i>
+          Home
+        </a>
+        <a href="/words" class="tab-link">
+          <i class="f7-icons">videocam_fill</i>
+          Palavras
+        </a>
+        <a href="/donations" class="tab-link">
+          <i class="f7-icons">heart_circle</i>
+          Doações
+        </a>
+        <a href="/profile" class="tab-link tab-link-active">
+          <i class="f7-icons">menu</i>
+          Menu
+        </a>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+  export default () => {
+    return $render;
+  };
+</script>

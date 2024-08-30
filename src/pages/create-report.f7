@@ -1,0 +1,41 @@
+<template>
+  <div class="page" data-name="create_report">
+    <a href="#" class="link back">
+      <i class="f7-icons" id="routerbackitem">arrow_left</i>
+    </a>
+    <div class="page-content">
+      <div class="login-form-report">
+        <h1>Cadastro de relatório</h1>
+        <div class="participants-list">
+          <h3 id="relatory_participants">Participantes</h3>
+          <ul id="ultima"></ul>
+        </div>
+        <div class="list no-hairlines no-hairlines-between">
+          <ul>
+            <li class="item-content item-input item-input-outline">
+              <div class="item-inner">
+                <div class="item-title item-label">Total em ofertas</div>
+                <div class="item-input-wrap">
+                  <input
+                    type="text"
+                    name="totalofertas"
+                    id="totalofertas"
+                    required
+                  />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <button class="button button-fill button-raised col" id="cadastrar-btn">CADASTRAR</button>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+  export default () => {
+    return $render;
+  };
+</script>

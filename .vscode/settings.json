@@ -1,0 +1,10 @@
+{
+  "files.associations": {
+    "*.f7": "html"
+  },
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#04342C",
+    "titleBar.activeBackground": "#06493E",
+    "titleBar.activeForeground": "#ECFEFB"
+  }
+}

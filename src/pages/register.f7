@@ -1,0 +1,71 @@
+<template>
+  <div class="page" data-name="register">
+    <div class="login-content">
+      <div class="block login-form">
+        <div class="form-logo-container">
+          <img src="images/logo.png" class="form-logo" />
+        </div>
+        <form name="register_form" id="register_form">
+          <div class="list no-hairlines no-hairlines-between">
+            <ul>
+              <li class="item-content item-input item-input-outline">
+                <div class="item-inner">
+                  <div class="item-title item-label">Nome</div>
+                  <div class="item-input-wrap">
+                    <input type="text" name="name" id="name" required />
+                    <span class="input-clear-button"></span>
+                  </div>
+                </div>
+              </li>
+              <li class="item-content item-input item-input-outline">
+                <div class="item-inner">
+                  <div class="item-title item-label">E-mail</div>
+                  <div class="item-input-wrap">
+                    <input type="email" name="email" id="email" required />
+                    <span class="input-clear-button"></span>
+                  </div>
+                </div>
+              </li>
+              <li class="item-content item-input item-input-outline">
+                <div class="item-inner">
+                  <div class="item-title item-label">Senha</div>
+                  <div class="item-input-wrap">
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      required
+                    />
+                    <span class="input-clear-button"></span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="custom-action-button">
+              <div class="custom-action" id="btn-login">
+                <button class="button button-fill col button-custom">
+                  Realizar cadastro
+                </button>
+              </div>
+            </div>
+            <div class="login-action-links">
+              <span>Já possui uma conta?</span>
+              <a href="/" data-force="true" data-ignore-cache="true">Login</a>
+            </div>
+          </div>
+          <div class="terms-use-policy">
+            <span
+              >Ao prosseguir, você aceita nossos <a href="#">Termos de Uso</a> e
+              nossa <a href="#">Política de Privacidade</a></span
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+  export default () => {
+    return $render;
+  };
+</script>

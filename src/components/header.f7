@@ -1,0 +1,16 @@
+<template>
+  <header class="renovada-header">
+      <img src="images/logo-horizontal.png" alt="Logo" />
+    <div class="renovada-header-icons"> 
+      <div class="avatar-profile" id="avatar-profile">
+        <i class="f7-icons">person</i>
+      </div>
+    </div>
+  </header>
+</template>
+<script>
+  export default () => {
+    return $render;
+  };
+  
+</script>

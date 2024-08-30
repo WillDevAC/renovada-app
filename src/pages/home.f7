@@ -1,0 +1,46 @@
+<template>
+  <div class="page" data-name="home">
+    <div class="page-content">
+      <renovada-header />
+      <div class="words-title">
+        <h3>Explore nossas palavras</h3>
+      </div>
+      <div class="words" id="words-list"></div>
+      <div class="schedule-title">
+        <h3>Agenda da semana</h3>
+      </div>
+      <div class="schedule">
+        <div class="schedule-list" id="schedule-list"></div>
+      </div>
+      <div class="schedule-title">
+        <h3>Eventos</h3>
+      </div>
+      <div class="events-list" id="events-list"></div>
+    </div>
+    <div class="toolbar toolbar-bottom tabbar">
+      <div class="toolbar-inner">
+        <a href="/home" class="tab-link tab-link-active">
+          <i class="f7-icons">house</i>
+          Home
+        </a>
+        <a href="/words" class="tab-link">
+          <i class="f7-icons">videocam_fill</i>
+          Palavras
+        </a>
+        <a href="/donations" class="tab-link">
+          <i class="f7-icons">heart_circle</i>
+          Doações
+        </a>
+        <a href="/profile" class="tab-link">
+          <i class="f7-icons">menu</i>
+          Menu
+        </a>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+  export default () => {
+    return $render;
+  };
+</script>

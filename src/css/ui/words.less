@@ -1,0 +1,307 @@
+/* @Words */
+
+
+.words {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
+    overflow-y: scroll;
+}
+
+.words::-webkit-scrollbar {
+    display: none;
+}
+
+.words-title {
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.words-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    max-width: 200px;
+    height: 240px;
+}
+
+.words-card-thumb {
+    display: block;
+    height: 60%;
+    width: 100%;
+}
+
+.words-card-thumb img {
+    width: 100%;
+    height: 100%;
+}
+
+.words-card-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.words-card-details h1 {
+    font-size: 13px;
+    font-weight: bold;
+    vertical-align: baseline;
+}
+
+.words-card-details span {
+    font-size: 12px;
+    font-weight: 400;
+    color: #adadb8;
+    vertical-align: baseline;
+}
+
+.words-card-chips {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.calendar {
+    padding-top: 2rem;
+}
+
+
+/* @schedule */
+
+.schedule-title {
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 1rem;
+}
+
+.schedule-title h3 {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.schedule {
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 1rem;
+}
+
+.schedule h3 {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.schedule-list {
+    display: flex;
+    width: 100%;
+    height: auto;
+    gap: 1rem;
+    overflow-y: scroll;
+}
+
+.schedule-list::-webkit-scrollbar {
+    display: none;
+}
+
+.schedule-list-item {
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 10rem;
+    width: 20rem;
+    max-width: 20rem;
+    min-width: 20rem;
+    padding: 1rem;
+    gap: 2rem;
+    background: linear-gradient(135deg, #09050f, #000000);
+    border: 1px solid rgb(24, 23, 23);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.schedule-list-item-date h1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #673ab7;
+}
+
+.schedule-list-item-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    max-width: 40px;
+    gap: 0.1rem;
+}
+
+.schedule-list-item-date span {
+    font-size: 0.7rem;
+}
+
+.schedule-list-item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+.schedule-list-item-info h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.schedule-list-item-info span {
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: gray;
+}
+
+.avatars {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #673ab7;
+    margin-left: -10px;
+    position: relative;
+    background-color: black;
+}
+
+.avatar:first-child {
+    margin-left: 0;
+}
+
+.avatar.more {
+    background: linear-gradient(45deg, rgb(106, 22, 224) 0%, rgb(68, 8, 111) 100%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-action-schedule {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    color: white;
+}
+
+.btn-action-schedule i {
+    font-size: 1rem;
+    color: rgb(191, 177, 177);
+}
+
+/* @eventos */
+
+.events-list {
+    display: flex;
+    width: 100%;
+    height: auto;
+    gap: 1rem;
+    overflow-y: scroll;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 2%;
+    margin-bottom: 5rem;
+}
+
+.event-list-card {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #09050f, #000000);
+    min-width: 18rem;
+    max-width: 18rem;
+    min-height: 15rem;
+    border-radius: 1rem;
+    background-color: #0f0f0f;
+    border: 1px solid rgb(24, 23, 23);
+    padding: 1rem;
+}
+
+.event-list-profile {
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.3rem;
+}
+
+.event-list-profile h1 {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.event-list-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #673ab7;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.event-list-author i {
+    font-size: 1rem;
+    color: gray;
+}
+
+
+.events-list::-webkit-scrollbar {
+    display: none;
+}
+
+.event-address span {
+    width: 100%;
+    color: rgb(190, 180, 180);
+    font-size: 0.7rem;
+}
+
+.event-card-title {
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.event-card-title h1 {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.event-card-participants {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.event-card-participants span {
+    font-size: 0.7rem;
+    color: rgb(190, 180, 180);
+    margin-top: 1.5rem;
+}
+
+.event-card-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}

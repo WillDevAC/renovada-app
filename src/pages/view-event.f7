@@ -1,0 +1,14 @@
+<template>
+  <div class="page" data-name="view-event-page">
+    <div class="page-content">
+      <div id="page-content-event"></div>
+      <div id="qrcodebar" class="qrcodebar"></div>
+    </div>
+  </div>
+</template>
+
+<script>
+  export default () => {
+    return $render;
+  };
+</script>

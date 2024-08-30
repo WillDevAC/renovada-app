@@ -1,0 +1,42 @@
+<template>
+  <div class="page">
+    <div class="toolbar tabbar toolbar-bottom">
+      <div class="toolbar-inner">
+        <a href="#relatorios" class="tab-link tab-link-active">Relatórios</a>
+        <a href="#participantes" class="tab-link">Membros</a>
+      </div>
+    </div>
+    <a href="#" class="link back">
+      <i class="f7-icons" id="routerbackitem">arrow_left</i>
+    </a>
+    <div class="tabs-animated-wrap">
+      <div class="tabs">
+        <div id="relatorios" class="page-content tab tab-active">
+          <div class="block">
+            <div class="relatory_button" id="relatory_button">
+              <button class="button button-fill button-raised col">
+                Novo relatorio
+              </button>
+            </div>
+            <h1 id="relationship_celule">Meus relatórios</h1>
+            <div class="groupsrelatorys" id="groupsrelatorysteste">
+              
+            </div>
+          </div>
+        </div>
+        <div id="participantes" class="page-content tab">
+          <div class="block">
+            <h1 id="relationship_celule">Membros da minha célula</h1>
+            <div id="users_group"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+  export default () => {
+    return $render;
+  };
+</script>

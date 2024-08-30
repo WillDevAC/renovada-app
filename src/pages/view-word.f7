@@ -1,0 +1,12 @@
+<template>
+  <div class="page" data-name="view_word">
+    <div class="page-content" id="page-content">
+    </div>
+  </div>
+</template>
+
+<script>
+  export default () => {
+    return $render;
+  };
+</script>

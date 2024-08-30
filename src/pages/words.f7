@@ -1,0 +1,57 @@
+<template>
+  <div class="page" data-name="words">
+    <div class="page-content">
+      <renovada-header />
+      <div class="words-categories" id="list-categories-words"></div>
+      <div class="words-highlited-title">
+        <h3>Em destaque</h3>
+      </div>
+      <div class="words-highlited" id="words-highlited-list">
+        <article class="words-highlited-card">
+          <div class="words-highlited-thumb">
+            <img src="/images/thumb.webp" alt="Video Thumb" />
+          </div>
+          <div class="words-highlited-details">
+            <h1>Titulo</h1>
+            <span>Autor</span>
+          </div>
+        </article>
+      </div>
+      <div class="words-highlited-title">
+        <h3>Mostrando resultados</h3>
+      </div>
+      <div
+        class="list media-list list-outline-ios list-strong-ios list-dividers-ios list-categorie"
+      >
+        <ul id="search-results-itens-words"></ul>
+      </div>
+    </div>
+
+    <div class="toolbar toolbar-bottom tabbar">
+      <div class="toolbar-inner">
+        <a href="/home" class="tab-link">
+          <i class="f7-icons">house</i>
+          Home
+        </a>
+        <a href="/words" class="tab-link tab-link-active">
+          <i class="f7-icons">videocam_fill</i>
+          Palavras
+        </a>
+        <a href="/donations" class="tab-link">
+          <i class="f7-icons">heart_circle</i>
+          Doações
+        </a>
+        <a href="/profile" class="tab-link">
+          <i class="f7-icons">menu</i>
+          Menu
+        </a>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+  export default () => {
+    return $render;
+  };
+</script>
